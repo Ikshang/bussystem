@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <title>Seamless Checkout</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PurbaPachim </h1>
+            <img src="/flg_logo10984.jpg" width="250px" >
+        </div>
+    </header>
+    
+    <main id="checkoutSteps">
+        <section class="checkout-step" id="step1">
+            <h2>Step 1: Shipping Information</h2>
+            <form id="shippingForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                
+                <button type="button" onclick="nextStep()">Next</button>
+            </form>
+        </section>
+
+        <section class="checkout-step" id="step2">
+            <h2>Step 2: Payment Information</h2>
+            <form id="paymentForm">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="**** **** **** ****" required>
+                
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                
+                <button type="button" onclick="prevStep()">Previous</button>
+                <button type="button" onclick="nextStep()">Next</button>
+            </form>
+        </section>
+
+        <section class="checkout-step" id="step3">
+            <h2>Step 3: Confirm Order</h2>
+            <div id="confirmationDetails">
+                <!-- Display shipping and payment details here -->
+            </div>
+            
+            <button type="button" onclick="prevStep()">Previous</button>
+            <button type="button" onclick="placeOrder()">Place Order</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Seamless Checkout</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

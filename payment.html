@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Secure Payment Gateway Integration</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PurbaPachim </h1>
+            <img src="/flg_logo10984.jpg" width="250px" >
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#bookings">Bookings</a></li>
+                <li><a href="/profile.html">Profile</a></li>
+                <li><a href="/setting.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+     
+    
+
+    
+
+    <!-- ... (Previous code) ... -->
+
+    <main>
+        <section id="seatMap">
+            <!-- Seat map goes here -->
+        </section>
+
+        <section id="bookingSection">
+            <h2>Book a Seat</h2>
+            <p>Select an available seat:</p>
+            <form id="bookingForm">
+                <label for="selectedSeat">Selected Seat:</label>
+                <input type="text" id="selectedSeat" name="selectedSeat" readonly required>
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <main>
+        <section id="seatMap">
+            <!-- Seat map goes here -->
+        </section>
+
+        <section id="bookingSection">
+            <h2>Book a Seat</h2>
+            <p>Select an available seat:</p>
+            <form id="bookingForm">
+                <label for="selectedSeat">Selected Seat:</label>
+                <input type="text" id="selectedSeat" name="selectedSeat" readonly required>
+                
+                <!-- Add payment details here -->
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Card number" required>
+                
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                
+                <button type="button" id="submitPayment">Pay Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PurbaPachim</p>
+    </footer>
+
+    <script src="payment.js"></script>
+</body>
+</html>

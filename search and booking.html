@@ -1,0 +1,89 @@
+<!-- ... (Previous code) ... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="search and booking.css">
+    <
+    <title>PurbaPachim Bus Ticket System</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PurbaPachim </h1>
+            <img src="/flg_logo10984.jpg" width="250px" >
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/search and booking.html">Bookings</a></li>
+                <li><a href="/profile.html">Profile</a></li>
+                <li><a href="/setting.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="searchSection">
+            <h2>Search for Buses</h2>
+            <form id="searchForm">
+                <label for="fromLocation">From Location:</label>
+                <input type="text" id="fromLocation" name="fromLocation" required>
+                
+                <label for="toLocation">To Location:</label>
+                <input type="text" id="toLocation" name="toLocation" required>
+                
+                <label for="travelDate">Travel Date:</label>
+                <input type="date" id="travelDate" name="travelDate" required>
+                
+                <label for="travelTime">Travel Time:</label>
+                <input type="time" id="travelTime" name="travelTime" required>
+                
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="bookingSection">
+            
+            <!-- Booking form goes here -->
+        </section>
+    </main>
+
+    <!-- ... (Remaining code) ... -->
+    <!-- ... (Previous code) ... -->
+
+    <main>
+       
+
+        <section id="bookingSection">
+            <h2>Book a Ticket</h2>
+            <form id="bookingForm">
+                <label for="numberOfTickets">Number of Tickets:</label>
+                <input type="number" id="numberOfTickets" name="numberOfTickets" min="1" required>
+                
+                <label for="seatPreference">Seat Preference:</label>
+                <select id="seatPreference" name="seatPreference">
+                    <option value="window">Window</option>
+                    <option value="aisle">Aisle</option>
+                </select>
+                
+                <h3>Passenger Details:</h3>
+                <label for="passengerName">Name:</label>
+                <input type="text" id="passengerName" name="passengerName" required>
+                
+                <label for="passengerAge">Age:</label>
+                <input type="number" id="passengerAge" name="passengerAge" min="1" required>
+
+                <button type="submit"><a href="/payment.html">Book Now</a></button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ... (Remaining code) ... -->
+    <footer>
+        <p>&copy; 2023 PurbaPachim Bus Ticket System</p>
+    </footer>
+
+    <script src="search and booking.js"></script>
+</body>
+</html>
